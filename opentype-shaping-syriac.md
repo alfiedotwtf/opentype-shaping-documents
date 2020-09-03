@@ -457,15 +457,17 @@ all scripts implemented in the Arabic shaping model:
 	locl
 	isol
 	fina
-	fin2 
-	fin3 
+	fin2
+	fin3
 	medi
-	med2 
+	med2
 	init
 	rlig
 	rclt (not used in Syriac)
 	calt
-	
+
+> Note: RLIG and CALT need to be appled to the word as a whole before
+> continuing to the next feature.
 
 #### 4.1 locl ####
 

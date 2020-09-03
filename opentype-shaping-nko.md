@@ -381,7 +381,9 @@ all scripts implemented in the N'Ko shaping model:
 	rlig (not used in N'Ko)
 	rclt (not used in N'Ko)
 	calt
-	
+
+> Note: RLIG and CALT need to be appled to the word as a whole before
+> continuing to the next feature.
 
 #### 4.1 locl ####
 

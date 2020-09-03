@@ -427,7 +427,9 @@ all scripts implemented in the Arabic shaping model:
 	rlig
 	rclt
 	calt
-	
+
+> Note: RLIG and CALT need to be appled to the word as a whole before
+> continuing to the next feature.
 
 #### 4.1 locl ####
 

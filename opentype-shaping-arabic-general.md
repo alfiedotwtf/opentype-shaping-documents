@@ -369,7 +369,10 @@ all scripts implemented with the Arabic shaping model:
 	rlig
 	rclt
 	calt
-	
+
+> Note: RLIG and CALT need to be appled to the word as a whole before
+> continuing to the next feature.
+
 See the individual script pages for further detail on each feature and
 for script-specific information.
 
