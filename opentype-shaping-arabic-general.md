@@ -261,25 +261,14 @@ JOIN_CAUSING:
 Otherwise, tag the current character for `isol`.
 
 After testing the final character of the word, if the text is in
-`<syrc>` and current (final) character is "Alaph", perform an additional test:
-  - If the preceding character's JOINING_GROUP is DALATH_RISH,
-    tag the current character for `fin3`, then update the tag for the
-    preceding character:
-	  - `medi` becomes `fina`
-	  - `init` becomes `isol`
-	  - `fina` remains `fina`
-	  - `isol` remains `isol`
-  - If the preceding character's JOINING_GROUP is not DALATH_RISH, tag
-    the current character for `fin2`, then update the tag for the
-    preceding character:
-	  - `medi` becomes `fina`
-	  - `fin2` becomes `fina`
-	  - `fin3` becomes `fina`
-	  - `init` becomes `isol`
-	  - `fina` remains `fina`
-	  - `isol` remains `isol`
-	  - `med2` remains `med2`
+`<syrc>` and if the last character that is not JOINING_TYPE_TRANSPARENT or
+JOINING_TYPE_NON_JOINING is "Alaph", perform an additional test:
 
+  - If the preceding character is JOINING_TYPE_LEFT, then update the current
+    character for `fina`
+  - If the preceding character's JOINING_GROUP is DALATH_RISH, then update the
+    current character for `fin3`
+  - Otherwise update the current character for `fin2`
 
 Once the last character of the word has been processed, proceed to the
 next word and repeat the algorithm, starting at the beginning of the
